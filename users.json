@@ -1,0 +1,14 @@
+[
+  {
+    "user": "demo",
+    "pass": "123456",
+    "expire": "2026-12-31",
+    "device": ""
+  },
+  {
+    "user": "cliente1",
+    "pass": "abc123",
+    "expire": "2026-04-01",
+    "device": ""
+  }
+]
