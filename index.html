@@ -365,12 +365,21 @@ document.getElementById("event-selector").style.display="flex";
 
 function logout(){
 
-// eliminar sesión
-localStorage.clear();
+console.log("cerrando sesión");
+
+// borrar sesión
+localStorage.removeItem("sessionUser");
+
+// detener player si está activo
+if(player){
+player.unload();
+}
+
+// ocultar secciones
+document.getElementById("player-container").style.display="none";
+document.getElementById("event-selector").style.display="none";
 
 // mostrar login
-document.getElementById("event-selector").style.display="none";
-document.getElementById("player-container").style.display="none";
 document.getElementById("login-container").style.display="flex";
 
 // limpiar campos
