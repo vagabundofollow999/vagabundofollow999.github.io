@@ -365,9 +365,18 @@ document.getElementById("event-selector").style.display="flex";
 
 function logout(){
 
-localStorage.removeItem("sessionUser");
+// eliminar sesión
+localStorage.clear();
 
-location.reload();
+// mostrar login
+document.getElementById("event-selector").style.display="none";
+document.getElementById("player-container").style.display="none";
+document.getElementById("login-container").style.display="flex";
+
+// limpiar campos
+document.getElementById("username").value="";
+document.getElementById("password").value="";
+document.getElementById("deviceId").value="";
 
 }
 
