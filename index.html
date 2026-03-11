@@ -363,34 +363,16 @@ document.getElementById("event-selector").style.display="flex";
 }
 
 /* LOGOUT */
-
+  
 function logout(){
-
-/* BORRAR SESION */
 
 localStorage.removeItem("sessionUser");
 
-/* LIMPIAR PLAYER SI ESTA ACTIVO */
-
-if(player){
-player.unload();
-}
-
-/* OCULTAR TODO */
-
-document.getElementById("player-container").style.display="none";
-document.getElementById("event-selector").style.display="none";
-
-/* MOSTRAR LOGIN */
+/* volver al login */
 
 document.getElementById("login-container").style.display="flex";
-
-/* LIMPIAR CAMPOS */
-
-document.getElementById("username").value="";
-document.getElementById("password").value="";
-document.getElementById("deviceId").value="";
-document.getElementById("login-error").textContent="";
+document.getElementById("event-selector").style.display="none";
+document.getElementById("player-container").style.display="none";
 
 }
 
