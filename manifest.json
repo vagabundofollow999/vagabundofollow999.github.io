@@ -1,12 +1,12 @@
 {
-"name":"Tigo Sports Streaming",
-"short_name":"Tigo Sports",
+"name":"Ti Sports ♔",
+"short_name":"Ti Sports ♔",
 "id":"/",
 "start_url":"/",
 "scope":"/",
-"display":"fullscreen",
+"display":"standalone",
 "background_color":"#000000",
-"theme_color":"#000000",
+"theme_color":"#ff0000",
 "orientation":"landscape",
 "icons":[
 {
