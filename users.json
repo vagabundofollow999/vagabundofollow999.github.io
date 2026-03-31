@@ -30,10 +30,10 @@
     "device": "3E74-DMZL-T8M0"
   },
   {
-    "user": "cliente6",
+    "user": "vagabundo@ti.go",
     "pass": "883590",
-    "expire": "2026-12-31",
-    "device": "582V-EZ83-L1LC"
+    "expire": "",
+    "device": "nul"
   },
   {
     "user": "cliente7",
