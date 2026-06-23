@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esteban Ruiz | Developer</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root{
+    --bg:#000000;
+    --red:#ff003c;
+    --white:#ffffff;
+    --red-glow:#ff003c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--white);
+    font-family:'Share Tech Mono', monospace;
+    overflow-x:hidden;
+}
+
+/* Fondo animado */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    repeating-linear-gradient(
+        0deg,
+        rgba(255,0,60,0.03) 0px,
+        rgba(255,0,60,0.03) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events:none;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 50% 50%, rgba(255,0,60,0.08), transparent 60%);
+    pointer-events:none;
+    z-index:-1;
+}
+
+/* Header */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.ascii{
+    color:var(--red);
+    text-shadow:
+    0 0 5px var(--red),
+    0 0 10px var(--red),
+    0 0 20px var(--red);
+    font-size:11px;
+    line-height:1.1;
+    overflow:auto;
+    max-width:100%;
+}
+
+.name{
+    margin-top:25px;
+    font-size:3rem;
+    color:var(--white);
+    text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff;
+}
+
+.subtitle{
+    margin-top:15px;
+    color:var(--red);
+    font-size:1.2rem;
+}
+
+.typing{
+    margin-top:15px;
+    border-right:3px solid var(--red);
+    white-space:nowrap;
+    overflow:hidden;
+    width:0;
+    animation:
+        typing 4s steps(40,end) forwards,
+        blink .8s infinite;
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:100%}
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+
+/* Secciones */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    margin-bottom:30px;
+    border:1px solid var(--red);
+    background:rgba(255,255,255,0.02);
+    backdrop-filter:blur(5px);
+    padding:25px;
+    border-radius:10px;
+    box-shadow:
+    0 0 10px rgba(255,0,60,.4),
+    inset 0 0 10px rgba(255,0,60,.15);
+}
+
+.card h2{
+    color:var(--red);
+    margin-bottom:15px;
+    text-shadow:0 0 10px var(--red);
+}
+
+.card p{
+    line-height:1.8;
+}
+
+/* Skills */
+
+.skill{
+    margin-bottom:18px;
+}
+
+.skill span{
+    display:block;
+    margin-bottom:6px;
+}
+
+.bar{
+    height:12px;
+    border:1px solid var(--red);
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(90deg,var(--red),#ffffff);
+    box-shadow:0 0 15px var(--red);
+}
+
+/* Lista */
+
+.list{
+    list-style:none;
+}
+
+.list li{
+    margin-bottom:12px;
+}
+
+/* Terminal */
+
+.terminal{
+    background:#050505;
+    border:1px solid var(--red);
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+}
+
+.command{
+    color:var(--red);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:var(--red);
+    text-shadow:0 0 10px var(--red);
+}
+
+.status{
+    display:inline-block;
+    padding:10px 20px;
+    border:1px solid var(--red);
+    box-shadow:0 0 15px rgba(255,0,60,.5);
+}
+
+/* Glitch */
+
+.glitch{
+    position:relative;
+}
+
+.glitch::before,
+.glitch::after{
+    content:attr(data-text);
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+}
+
+.glitch::before{
+    color:red;
+    animation:glitch1 .8s infinite;
+}
+
+.glitch::after{
+    color:white;
+    animation:glitch2 .8s infinite;
+}
+
+@keyframes glitch1{
+    0%,100%{transform:translate(0);}
+    20%{transform:translate(-2px,1px);}
+    40%{transform:translate(2px,-1px);}
+    60%{transform:translate(-1px,2px);}
+}
+
+@keyframes glitch2{
+    0%,100%{transform:translate(0);}
+    20%{transform:translate(2px,-1px);}
+    40%{transform:translate(-2px,1px);}
+    60%{transform:translate(1px,-2px);}
+}
+
+@media(max-width:768px){
+
+    .ascii{
+        font-size:6px;
+    }
+
+    .name{
+        font-size:2rem;
+    }
+
+    .subtitle{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<pre class="ascii">
+███████╗██████╗ ███████╗████████╗███████╗██████╗  █████╗ ███╗   ██╗
+██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗██╔══██╗████╗  ██║
+█████╗  ██████╔╝█████╗     ██║   █████╗  ██████╔╝███████║██╔██╗ ██║
+██╔══╝  ██╔══██╗██╔══╝     ██║   ██╔══╝  ██╔══██╗██╔══██║██║╚██╗██║
+███████╗██║  ██║███████╗   ██║   ███████╗██████╔╝██║  ██║██║ ╚████║
+╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
+</pre>
+
+<h1 class="name glitch" data-text="ESTEBAN RUIZ">
+ESTEBAN RUIZ
+</h1>
+
+<p class="subtitle">
+Web Developer • Android Developer • Open Source Enthusiast
+</p>
+
+<p class="typing">
+> Bienvenido a mi espacio digital...
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+<h2>> SOBRE MÍ</h2>
+
+<p>
+Soy un desarrollador web y desarrollador Android apasionado por la
+tecnología, la programación y la creación de soluciones digitales modernas.
+Me especializo en el desarrollo de aplicaciones móviles, aplicaciones para
+Android TV, sitios web interactivos y sistemas multimedia.
+</p>
+
+<br>
+
+<p>
+Trabajo principalmente con tecnologías como HTML, CSS, JavaScript y Python,
+además de explorar constantemente nuevas herramientas, frameworks y lenguajes
+que me permitan mejorar mis habilidades y mantenerme actualizado en el mundo
+del desarrollo de software.
+</p>
+
+<br>
+
+<p>
+Disfruto diseñar interfaces modernas, optimizar el rendimiento de las
+aplicaciones, crear experiencias intuitivas para los usuarios y desarrollar
+proyectos que combinen funcionalidad, rendimiento y diseño.
+</p>
+
+<br>
+
+<p>
+Mi objetivo es seguir creciendo profesionalmente, participar en proyectos
+innovadores, aprender nuevas tecnologías y contribuir a la comunidad mediante
+la creación de software útil, eficiente y de calidad.
+</p>
+
+</div>
+
+<div class="card">
+<h2>> TECNOLOGÍAS Y HABILIDADES</h2>
+
+<div class="skill">
+<span>HTML5</span>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<span>CSS3</span>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span>JavaScript</span>
+<div class="bar"><div class="fill" style="width:88%"></div></div>
+</div>
+
+<div class="skill">
+<span>Python</span>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<span>Android Development</span>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span>Android TV</span>
+<div class="bar"><div class="fill" style="width:92%"></div></div>
+</div>
+
+<div class="skill">
+<span>Git & GitHub</span>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<span>Linux</span>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+</div>
+
+<div class="card">
+<h2>> LO QUE HAGO</h2>
+
+<ul class="list">
+<li>✔ Desarrollo de sitios web modernos y responsivos.</li>
+<li>✔ Desarrollo de aplicaciones Android.</li>
+<li>✔ Desarrollo de aplicaciones Android TV.</li>
+<li>✔ Diseño de interfaces de usuario.</li>
+<li>✔ Integración de APIs y servicios web.</li>
+<li>✔ Desarrollo de Progressive Web Apps (PWA).</li>
+<li>✔ Optimización y rendimiento de aplicaciones.</li>
+<li>✔ Gestión de proyectos con Git y GitHub.</li>
+<li>✔ Automatización de procesos con Python.</li>
+<li>✔ Exploración constante de nuevas tecnologías.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>> TERMINAL</h2>
+
+<div class="terminal">
+<p><span class="command">root@portfolio:~$</span> whoami</p>
+<p>Desarrollador Web & Android.</p>
+
+<br>
+
+<p><span class="command">root@portfolio:~$</span> skills</p>
+<p>HTML • CSS • JavaScript • Python • Android • Linux • GitHub</p>
+
+<br>
+
+<p><span class="command">root@portfolio:~$</span> status</p>
+<p>ONLINE</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<div class="status">
+[ SYSTEM STATUS : ONLINE ]
+</div>
+</footer>
+
+</body>
+</html>
