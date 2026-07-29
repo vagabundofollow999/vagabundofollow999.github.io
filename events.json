@@ -5,7 +5,7 @@
 
   { "id":"3","name":"Tigo Sports 3","type":"mpd","url":"https://sam-py-edge05.tigo.com.py/ccur-session/f9de91d275e9428d9b2020eaf9c3772017462185850761b65a320aeed11ebae01d90082191a3coPufp9yYB3qqtMFbxeMGTmPz/out/v1/c2cc7832b5b64aedacb0e459fd9d8398/index.mpd?dvr_window_length=30","key":"2245f48a5998442f835099d30f2e0305","value":"f48f6ce816fe86d8c10587e9a7e927a3","icon":"https://i.ibb.co/Cs77Ttc7/tig-rezise.png" },
 
-  { "id":"4","name":"Evento 4","type":"mpd","url":"","key":"","value":"","icon":"" },
+  { "id":"4","name":"Evento 4","type":"mpd","url":"https://cdn.cvattv.com.ar/live/c6eds/ESPN2_Arg/SA_Live_dash_cenc/ESPN2_Arg.mpd","key":"65a5bfa3c7a72dde60be9b0c7406c8fc","value":"0b40ae9f78a7bac3b57ecbf72d3c081e","icon":"https://i.ibb.co/RCMYFsv/espn-2B.png" },
 
   { "id":"5","name":"Evento 5","type":"mpd","url":"","key":"","value":"","icon":"" },
 
