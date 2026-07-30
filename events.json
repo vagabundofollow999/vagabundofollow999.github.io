@@ -7,13 +7,13 @@
 
   { "id":"4","name":"Evento 4","type":"mpd","url":"https://cdn.cvattv.com.ar/live/c6eds/ESPN2_Arg/SA_Live_dash_cenc/ESPN2_Arg.mpd","key":"65a5bfa3c7a72dde60be9b0c7406c8fc","value":"0b40ae9f78a7bac3b57ecbf72d3c081e","icon":"https://i.ibb.co/RCMYFsv/espn-2B.png" },
 
-  { "id":"5","name":"Evento 5","type":"mpd","url":"","key":"","value":"","icon":"https://i.ibb.co/LXNk03q5/CRT.png" },
+  { "id":"5","name":"Evento 5","type":"mpd","url":"","key":"","value":"","icon":"https://i.ibb.co/vv115bFm/CRT.png" },
 
-  { "id":"6","name":"Evento 6","type":"mpd","url":"","key":"","value":"","icon":"" },
+  { "id":"6","name":"Evento 6","type":"mpd","url":"","key":"","value":"","icon":"https://i.ibb.co/vv115bFm/CRT.png" },
 
-  { "id":"7","name":"Evento 7","type":"mpd","url":"","key":"","value":"","icon":"" },
+  { "id":"7","name":"Evento 7","type":"mpd","url":"","key":"","value":"","icon":"https://i.ibb.co/vv115bFm/CRT.png" },
 
-  { "id":"8","name":"Evento 8","type":"mpd","url":"","key":"","value":"","icon":"" },
+  { "id":"8","name":"Evento 8","type":"mpd","url":"","key":"","value":"","icon":"https://i.ibb.co/vv115bFm/CRT.png" },
 
   { "id":"9","name":"Evento 9","type":"mpd","url":"","key":"","value":"","icon":"" },
 
